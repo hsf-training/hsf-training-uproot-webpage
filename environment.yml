@@ -1,0 +1,22 @@
+name: software-carpentries-scikit-hep-tutorial
+channels:
+  - conda-forge
+dependencies:
+  - awkward
+  - hist
+  - lz4
+  - matplotlib
+  - mplhep
+  - numba
+  - numpy
+  - pandas
+  - python-xxhash
+  - uproot
+  - xrootd
+  - zfit
+  - zstandard
+  - pip
+  - pip:
+      - vector
+      - particle
+      - fastjet
