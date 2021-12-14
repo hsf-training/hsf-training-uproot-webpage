@@ -6,6 +6,7 @@ questions:
  - "How do I fill histograms?"
  - "How do I project/slice/rebin them?"
  - "How do I plot them?"
+ - "How do I fit them?"
 objectives:
  - "HERE."
 keypoints:
