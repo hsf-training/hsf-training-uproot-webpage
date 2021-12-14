@@ -1,7 +1,7 @@
 ---
 title: "Basic file I/O with Uproot"
-teaching: 15
-exercises: 10
+teaching: 25
+exercises: 0
 questions:
  - "How can I find my data in a ROOT file?"
  - "How can I plot it?"
