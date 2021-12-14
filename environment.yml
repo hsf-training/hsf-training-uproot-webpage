@@ -2,6 +2,7 @@ name: software-carpentries-scikit-hep-tutorial
 channels:
   - conda-forge
 dependencies:
+  - python=3.9
   - awkward
   - hist
   - lz4
@@ -20,3 +21,4 @@ dependencies:
       - vector
       - particle
       - fastjet
+      - scikit-hep-testdata
