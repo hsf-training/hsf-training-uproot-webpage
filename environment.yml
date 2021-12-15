@@ -16,7 +16,7 @@ dependencies:
   - pip==21.3.1
   - pip:
       - awkward==1.7.0
-      - fastjet==0.0.1.1
+      - fastjet==3.3.4.0rc9
       - particle==0.16.2
       - scikit-hep-testdata==0.4.11
       - uproot==4.1.9
