@@ -1,5 +1,5 @@
 ---
-title: "Tips for scaling up"
+title: "Tools for scaling up"
 teaching: 10
 exercises: 0
 questions:

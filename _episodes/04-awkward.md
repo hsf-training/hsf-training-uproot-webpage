@@ -1,15 +1,18 @@
 ---
 title: "Jagged, ragged, Awkward Arrays"
-teaching: 15
-exercises: 10
+teaching: 30
+exercises: 15
 questions:
  - "How do I cut particles, rather than events?"
  - "How do I compute quantities on combinations of particles?"
- - "What if my process is too complex for array-oriented methods?"
 objectives:
- - "HERE."
+ - "Learn how to slice and perform computations on irregularly shaped arrays."
+ - "Apply these skills to improve the dimuon mass spectrum."
 keypoints:
- - "HERE."
+ - "NumPy (and almost all array libraries) is only for rectilinear collections of numbers: arrays, tables, and tensors."
+ - "Awkward Array extends NumPy's slicing and array-manipulation to jagged arrays and more general data types (such as nested records)."
+ - "These extensions are useful for physics."
+ - "There's usually more than one way to get what you want."
 ---
 
 # What is Awkward Array?
