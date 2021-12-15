@@ -2,49 +2,36 @@
 title: Setup
 ---
 
-This tutorial requires Jupyter, Python 3, Uproot (of course), Awkward Array, Vector, Matplotlib, and SciPy (for the optional fitting section).
+# For the tutorial
 
-# Getting Uproot and Jupyter
+This tutorial uses Uproot and a sampler of Scikit-HEP packages (Awkward Array, hist, Vector, zfit, Particle, fastjet), which are all components that you might or might not use in your analysis, as well as Python 3, NumPy, and a smattering of other mainstream libraries (Pandas, Matplotlib, JupyterLab, Numba).
 
-There are many ways of running the software necessary for this tutorial.
-I've put three common options in the sections below (you only need to use one).
-For ease of debugging, I recommend using Binder unless you already have another option up and running, but feel free to use whatever gets you to a Jupyter notebook with Uproot, Awkward Array, Vector, Matplotlib, and SciPy installed.
+Rather than asking you to install them all, just use this
 
-## Binder
+<p align="center">
+  <a href="https://mybinder.org/v2/gh/hsf-training/hsf-training-uproot-webpage/binder?urlpath=lab" target="_blank">
+    <img src="https://mybinder.org/badge_logo.svg" alt="Launch Binder" width="200">
+  </a>
+</p>
 
-Simply follow [this link to Binder](https://mybinder.org/v2/gh/masonproffitt/uproot-tutorial-notebooks/master).
-It should open up Jupyter with all necessary packages and files installed.
+to get a JupyterLab session with everything included. Once JupyterLab opens, click the "Python 3 (ipykernel)" button to get a new notebook.
 
-## SWAN
+# After the tutorial
 
-You must have a CERN account for this option.
-Go to <swan.cern.ch>.
-The first recommended "software stack" should be sufficient--just make sure it doesn't have "Python2" in the name.
-If you haven't done so before, you'll need to run `pip install vector` in a Jupyter notebook or terminal.
+If you want to install some of these packages on your own or your lab's computer, I recommend [Miniconda](https://docs.conda.io/en/latest/miniconda.html) (or the full [Anaconda distribution](https://docs.anaconda.com/anaconda/install/index.html)) with [conda-forge](https://conda-forge.org/docs/user/introduction.html#how-can-i-install-packages-from-conda-forge). This method also provides a way to [install ROOT in the same environment](https://github.com/conda-forge/root-feedstock#readme). After setting that up, Uproot (for instance) could be installed as
 
-## Anaconda (local installation)
+~~~
+conda install uproot awkward   # ... others?
+~~~
+{: .language-bash}
 
-The easiest way to run everything locally is through [Anaconda](https://www.anaconda.com/distribution/).
-Download the Python 3 version and follow the instructions.
-Once you're in the Anaconda environment, create a new environment with Uproot installed by running
-`conda create -n uproot uproot awkward vector`
-and then activate that environment by running
-`conda activate uproot`.
-(After the first time doing this, you only have to run the last command within Anaconda when you want to use Uproot again.)
-Finally, run `jupyter notebook`.
-A browser window should pop up with Jupyter open.
+If one of the above-mentioned packages is not available on conda-forge (yet), it can be installed in the same environment using pip:
 
-# Required data file
+~~~
+pip install fastjet
+~~~
+{: .language-bash}
 
-You will need to download a small (3.5 MiB)
-[CMS open data file](https://github.com/masonproffitt/uproot-tutorial-notebooks/raw/master/uproot-tutorial-file.root)
-as well. (This is already done for you if you're running on Binder).
-
-# Once you have Jupyter open...
-
-Just open a new Python 3 notebook.
-Whenever you see Python code in the tutorial, you can type it in and run it (Shift-Enter).
-The exercises are done in the notebook.
-You are encouraged to experiment far beyond what's in the tutorial whenever you have a question or are just curious about something!
+Alternatively, you could install everything using pip only. This is the default way to install Python packages, and there are many tutorials, including [Python's own](https://packaging.python.org/en/latest/tutorials/installing-packages/).
 
 {% include links.md %}
