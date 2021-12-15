@@ -34,7 +34,7 @@ To open a file for reading, pass the name of the file to [uproot.open](https://u
 
 ~~~
 import skhep_testdata
-filename = skhep_testdata.data_file("uproot-Event.root")   # downloads this test file and gets a local path to it
+filename = skhep_testdata.data_path("uproot-Event.root")   # downloads this test file and gets a local path to it
 
 import uproot
 file = uproot.open(filename)

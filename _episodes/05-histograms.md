@@ -65,7 +65,7 @@ This library is intended as an infrastructure component; a more user-friendly la
 ~~~
 import hist
 
-h = hist.Hist(hist.axis.Regular(120, 60, 120, label="mass [GeV]"))
+h = hist.Hist(hist.axis.Regular(120, 60, 120, name="mass"))
 
 h.fill(tree["M"].array())
 
@@ -181,8 +181,8 @@ loss = zfit.loss.BinnedNLL(model, binned_data)
 minimizer = zfit.minimize.Minuit()
 result = minimizer.minimize(loss)
 
-model.to_hist().plot(density=1)
 binned_data.to_hist().plot(density=1)
+model.to_hist().plot(density=1)
 ~~~
 {: .language-python}
 

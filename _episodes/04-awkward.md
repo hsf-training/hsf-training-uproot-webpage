@@ -353,7 +353,7 @@ ak.max(mass[ak.num(mass) > 0], axis=1)
 > ~~~
 > import particle, hepunits
 >
-> zmass = particle.Particle.find("Z0").mass / hepunits.GeV
+> zmass = particle.Particle.findall("Z0")[0].mass / hepunits.GeV
 > ~~~
 > {: .language-python}
 >
