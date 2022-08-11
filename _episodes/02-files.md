@@ -34,14 +34,14 @@ import uproot
 > ## Import errors?
 >
 > If you get something like:
-> 
+>
 > ~~~
 > Traceback (most recent call last):
 >   File "<stdin>", line 1, in <module>
 > ModuleNotFoundError: No module named 'uproot'
 > ~~~
 > {: .output}
-> 
+>
 > then this means Uproot hasn't been installed properly.
 > Check the [Setup]({{ page.root }}/setup.html) page for detailed instructions.
 > If you're using `conda` (like Anaconda or Miniconda),

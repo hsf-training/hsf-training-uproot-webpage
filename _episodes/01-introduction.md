@@ -59,9 +59,9 @@ Packages like NumPy are only designed to work with rectangular arrays, where eac
 > ## Jagged vs. rectangular arrays
 >
 > The name "jagged array" comes from the idea that if you have a 2D array in which there's a different number of entries in each row and you line rows up by their first element, then the right edge of the array will be "jagged" as opposed to straight:
-> 
+>
 > Rectangular array:
-> 
+>
 > ~~~
 > [[0, 1],
 >  [2, 3],
@@ -70,9 +70,9 @@ Packages like NumPy are only designed to work with rectangular arrays, where eac
 >  [8, 9]]
 > ~~~
 > {: .source}
-> 
+>
 > Jagged array:
-> 
+>
 > ~~~
 > [[0, 1],
 >  [2, 3, 4],
